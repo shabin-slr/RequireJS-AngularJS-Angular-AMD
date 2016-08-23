@@ -1,0 +1,18 @@
+<html>
+	<head></head>
+	<body>
+		<div>
+			<div ng-controller="ParentCtrl as pc">
+				<pre>{{pc.cities |json }}</pre>
+				<div ng-controller="ChildCtrl as cc">
+				  <pre>{{cc.parentCities |json}}</pre>
+				</div>
+				<div child-directive>
+			</div>
+			<script type="text/ng-template" id="dir_template">
+				<pre>{{dc.parentCities |json}}</pre>
+			</script>
+		</div>
+		<script type="text/javascript" src="libs/require.js" data-main="main"></script>
+	</body>
+</html>
