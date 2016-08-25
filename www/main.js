@@ -14,6 +14,7 @@ require.config({
         jQuery : 'libs/jquery-1.11.3.min',
         angular : 'libs/angular.min',
         angularAMD : 'libs/angularAMD.min',
+        angularRoute : 'libs/angular-route.min',
 
         app : 'js/app',
 
@@ -32,7 +33,8 @@ require.config({
     //for those cases.
     shim : {
         angular : { deps : ['jQuery'], exports : 'angular'},
-        angularAMD : { deps : ['angular'] }
+        angularAMD : { deps : ['angular'] },
+        angularRoute: { deps: ['angular'] },
     },
 
     deps : ['app']
